@@ -16,26 +16,24 @@ const students = {
     }
 };
 
-function getStudentByIdParam(idParam) {
+function getStudentById(idParam) {
     const idNum = Number(idParam);
-    if (!Number.isInteger(idNum) || idNum < 1) return { error: "ID inválido" };
+    if (!Number.isInteger(idNum) || idNum < 1) {
+        return { error: "ID inválido", status: 400 };
+    }
     const student = students[idNum];
-    if (!student) return { error: "Estudiante no encontrado", notFound: true };
-    return { student };
+    if (!student) {
+        return { error: "Estudiante no encontrado", status: 404 };
+    }
+    return { student, status: 200 };
 }
 
-app.get("/user-info/:id", (req, res) => {
-    const result = getStudentByIdParam(req.params.id);
-    if (result.error && result.notFound) return res.status(404).json({ error: result.error });
-    if (result.error) return res.status(400).json({ error: result.error });
-    return res.json(result.student);
-});
-
 app.get("/api/user-info/:id", (req, res) => {
-    const result = getStudentByIdParam(req.params.id);
-    if (result.error && result.notFound) return res.status(404).json({ error: result.error });
-    if (result.error) return res.status(400).json({ error: result.error });
-    return res.json(result.student);
+    const result = getStudentById(req.params.id);
+    if (result.error) {
+        return res.status(result.status).json({ error: result.error });
+    }
+    return res.status(200).json(result.student);
 });
 
 module.exports = app;
