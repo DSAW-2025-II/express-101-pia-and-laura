@@ -13,8 +13,8 @@
 
 ## Endpoints desplegados en Vercel
 
-- [GET /user-info/1](https://express-101-pia-and-laura.vercel.app/user-info/1)
-- [GET /user-info/2](https://express-101-pia-and-laura.vercel.app/user-info/2)
+- [GET /user-info/1](https://express-101-pia-and-laura.vercel.app/api/user-info/1)
+- [GET /user-info/2](https://express-101-pia-and-laura.vercel.app/api/user-info/2)
 
 
 # Taller en Parejas: Creación de un Endpoint con Express.js
