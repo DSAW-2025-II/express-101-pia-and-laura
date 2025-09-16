@@ -11,8 +11,11 @@
 - **Correo:** lauraherrod@unisabana.edu.co
 
 
-## Enlace de despliegue Vercel
-[Ver página desplegada](https://intro-to-asyncronism-lauraher2906.vercel.app)
+## Endpoints desplegados en Vercel
+
+- [GET /user-info/1](https://express-101-pia-and-laura.vercel.app/user-info/1)
+- [GET /user-info/2](https://express-101-pia-and-laura.vercel.app/user-info/2)
+
 
 # Taller en Parejas: Creación de un Endpoint con Express.js
 
