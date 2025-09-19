@@ -4,9 +4,9 @@ const app = express();
 const students = {
     1: {
         "name": "Pia",
-        "lastName": "",
-        "email": "@unisabana.edu.co",
-        "id": ""
+        "lastName": "Aroor",
+        "email": "piaaroor@unisabana.edu.co",
+        "id": "0000334335"
     },
     2: {
         "name": "Laura Catalina",
