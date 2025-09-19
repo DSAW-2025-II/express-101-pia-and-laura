@@ -2,8 +2,8 @@
 
 # Estudiante 1
 - **Nombre:** Pia Aroor
-- **Código:** 0000
-- **Correo:** @unisabana.edu.co
+- **Código:** 0000334335
+- **Correo:** piaar@unisabana.edu.co
 
 # Estudiante 2
 - **Nombre:** Laura Catalina Hernández Rodríguez
