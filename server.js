@@ -28,7 +28,7 @@ function getStudentById(idParam) {
     return { student, status: 200 };
 }
 
-app.get("/api/user-info/:id", (req, res) => {
+app.get("/user-info/:id", (req, res) => {
     const result = getStudentById(req.params.id);
     if (result.error) {
         return res.status(result.status).json({ error: result.error });
