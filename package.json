@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/DSAW-2025-II/express-101-pia-and-laura#readme",
   "dependencies": {
+    "dotenv": "^17.2.2",
     "express": "^5.1.0"
   }
 }
